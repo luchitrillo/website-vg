@@ -1,0 +1,242 @@
+# Logfile created on 2017-06-06 17:22:24 -0300 by logger.rb/56438
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-06 17:22:24 -0300 cap qa deploy:setup
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-06 17:23:36 -0300 cap qa deploy:setup
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-06 17:25:24 -0300 cap qa deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [ef8469a7] Running /usr/bin/env mkdir -p /tmp as www-data@web-ubuntu-1604
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-06 17:25:50 -0300 cap qa deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [de36690e] Running /usr/bin/env mkdir -p /tmp as www-data@web-ubuntu-1604
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-06 17:34:51 -0300 cap qa deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [2d525a6b] Running /usr/bin/env mkdir -p /tmp as www-data@web-ubuntu-1604
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 15:36:54 -0300 cap qa deploy:setup
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 15:37:13 -0300 cap qa deploy:setup
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 15:37:27 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [818d2e08] Running /usr/bin/env mkdir -p /tmp as www-data@web-ubuntu-1604
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 18:03:47 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e53259e9] Running /usr/bin/env mkdir -p /tmp as vagrant@127.0.0.0
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 18:04:58 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [29c86415] Running /usr/bin/env mkdir -p /tmp as vagrant@127.0.0.0
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 18:05:10 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [08da5c85] Running /usr/bin/env mkdir -p /tmp as vagrant@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 18:08:21 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e4cf88b7] Running /usr/bin/env mkdir -p /tmp as vagrant@127.0.0.1
+  INFO [e4cf88b7] Finished in 2.156 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [1c35fc27] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as vagrant@127.0.0.1
+  INFO [1c35fc27] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [01b96dba] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as vagrant@127.0.0.1
+  INFO [01b96dba] Finished in 2.855 seconds with exit status 0 (successful).
+  INFO [4c83e0d5] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/shared /var/www/dotcom-v3/releases as vagrant@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 18:14:11 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e30e5624] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [e30e5624] Finished in 2.177 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-07 18:18:29 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a53da192] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [a53da192] Finished in 2.139 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [62dd264c] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [62dd264c] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [653fc6da] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO [653fc6da] Finished in 2.427 seconds with exit status 0 (successful).
+  INFO [abeecb61] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/shared /var/www/dotcom-v3/releases as deployer@127.0.0.1
+  INFO [abeecb61] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [e3ca5dbe] Running /usr/bin/env git clone --mirror --depth 1 --no-single-branch git@github.com:flatiron-labs/dotcom-v3.git /var/www/dotcom-v3/repo as deployer@127.0.0.1
+  INFO [e3ca5dbe] Finished in 43.044 seconds with exit status 0 (successful).
+  INFO [4e1f9850] Running /usr/bin/env git remote set-url origin git@github.com:flatiron-labs/dotcom-v3.git as deployer@127.0.0.1
+  INFO [4e1f9850] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [9ca78947] Running /usr/bin/env git fetch --depth 1 origin master as deployer@127.0.0.1
+  INFO [9ca78947] Finished in 2.670 seconds with exit status 0 (successful).
+  INFO [eeb3b883] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/releases/20170607211834 as deployer@127.0.0.1
+  INFO [eeb3b883] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [e8d3df3a] Running /usr/bin/env git archive master build | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/dotcom-v3/releases/20170607211834 as deployer@127.0.0.1
+  INFO [e8d3df3a] Finished in 0.592 seconds with exit status 0 (successful).
+  INFO [8f3adcd7] Running /usr/bin/env echo "e0059c3738dd21aad679febf60d1942ec36b4782" >> REVISION as deployer@127.0.0.1
+  INFO [8f3adcd7] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [1684c814] Running /usr/bin/env ln -s /var/www/dotcom-v3/releases/20170607211834 /var/www/dotcom-v3/releases/current as deployer@127.0.0.1
+  INFO [1684c814] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [87a96301] Running /usr/bin/env mv /var/www/dotcom-v3/releases/current /var/www/dotcom-v3 as deployer@127.0.0.1
+  INFO [87a96301] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [b5f19a61] Running /usr/bin/env echo "Branch master (at e0059c3738dd21aad679febf60d1942ec36b4782) deployed as release 20170607211834 by luchi" >> /var/www/dotcom-v3/revisions.log as deployer@127.0.0.1
+  INFO [b5f19a61] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 11:39:09 -0300 cap qa deploy:setup
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 12:02:35 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c296c2c6] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [c296c2c6] Finished in 2.294 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [7b4aa40b] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [7b4aa40b] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [3bf80310] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO [3bf80310] Finished in 2.558 seconds with exit status 0 (successful).
+  INFO [bbb86e01] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/shared /var/www/dotcom-v3/releases as deployer@127.0.0.1
+  INFO [bbb86e01] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/dotcom-v3/repo
+  INFO [2889e86a] Running /usr/bin/env git remote set-url origin git@github.com:flatiron-labs/dotcom-v3.git as deployer@127.0.0.1
+  INFO [2889e86a] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [d318a940] Running /usr/bin/env git fetch --depth 1 origin master as deployer@127.0.0.1
+  INFO [d318a940] Finished in 2.847 seconds with exit status 0 (successful).
+  INFO [b75b22a0] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/releases/20170608150240 as deployer@127.0.0.1
+  INFO [b75b22a0] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [38cf05b1] Running /usr/bin/env git archive master build | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/dotcom-v3/releases/20170608150240 as deployer@127.0.0.1
+  INFO [38cf05b1] Finished in 0.618 seconds with exit status 0 (successful).
+  INFO [c07a1aa3] Running /usr/bin/env echo "9e94c9be6a1df2be8b1b50c5ab0528d186574089" >> REVISION as deployer@127.0.0.1
+  INFO [c07a1aa3] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [fbd650ac] Running /usr/bin/env ln -s /var/www/dotcom-v3/releases/20170608150240 /var/www/dotcom-v3/releases/current as deployer@127.0.0.1
+  INFO [fbd650ac] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [bcc6c323] Running /usr/bin/env mv /var/www/dotcom-v3/releases/current /var/www/dotcom-v3 as deployer@127.0.0.1
+  INFO [bcc6c323] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [88da57cb] Running /usr/bin/env echo "Branch master (at 9e94c9be6a1df2be8b1b50c5ab0528d186574089) deployed as release 20170608150240 by luchi" >> /var/www/dotcom-v3/revisions.log as deployer@127.0.0.1
+  INFO [88da57cb] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 12:04:00 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [95431e8b] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 15:27:00 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f36f1862] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 15:46:46 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5f809082] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [5f809082] Finished in 2.171 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [d45e0680] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [d45e0680] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [38dccf49] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 15:48:01 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [be5e6e20] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 15:52:16 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d36d72ba] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 15:53:42 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d382a5fe] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [d382a5fe] Finished in 2.123 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [524e1e24] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [524e1e24] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [062bb899] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 15:56:02 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8b2afdc8] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [8b2afdc8] Finished in 2.152 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [f8a83ef9] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [f8a83ef9] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [9d7bf651] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO [9d7bf651] Finished in 2.750 seconds with exit status 0 (successful).
+  INFO [cffe6291] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/shared /var/www/dotcom-v3/releases as deployer@127.0.0.1
+  INFO [cffe6291] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [8394dee6] Running /usr/bin/env git clone --mirror --depth 1 --no-single-branch git@github.com:flatiron-labs/dotcom-v3.git /var/www/dotcom-v3/repo as deployer@127.0.0.1
+  INFO [8394dee6] Finished in 81.238 seconds with exit status 0 (successful).
+  INFO [a82ac934] Running /usr/bin/env git remote set-url origin git@github.com:flatiron-labs/dotcom-v3.git as deployer@127.0.0.1
+  INFO [a82ac934] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [c861fdeb] Running /usr/bin/env git fetch --depth 1 origin master as deployer@127.0.0.1
+  INFO [c861fdeb] Finished in 2.937 seconds with exit status 0 (successful).
+  INFO [16876a58] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/releases/20170608185607 as deployer@127.0.0.1
+  INFO [16876a58] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [705fc2ce] Running /usr/bin/env git archive master build | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/dotcom-v3/releases/20170608185607 as deployer@127.0.0.1
+  INFO [705fc2ce] Finished in 0.605 seconds with exit status 0 (successful).
+  INFO [20d02718] Running /usr/bin/env echo "6a883e39a6341ce5d1230894d71e163759e5f4d1" >> REVISION as deployer@127.0.0.1
+  INFO [20d02718] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [1246beff] Running /usr/bin/env ln -s /var/www/dotcom-v3/releases/20170608185607 /var/www/dotcom-v3/releases/current as deployer@127.0.0.1
+  INFO [1246beff] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [cf6b706e] Running /usr/bin/env mv /var/www/dotcom-v3/releases/current /var/www/dotcom-v3 as deployer@127.0.0.1
+  INFO [cf6b706e] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [2af1fef8] Running /usr/bin/env echo "Branch master (at 6a883e39a6341ce5d1230894d71e163759e5f4d1) deployed as release 20170608185607 by luchi" >> /var/www/dotcom-v3/revisions.log as deployer@127.0.0.1
+  INFO [2af1fef8] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 16:21:07 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [681e0c74] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [681e0c74] Finished in 2.159 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [8c2e9a13] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [8c2e9a13] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [a295f530] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO [a295f530] Finished in 2.583 seconds with exit status 0 (successful).
+  INFO [f702b736] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/shared /var/www/dotcom-v3/releases as deployer@127.0.0.1
+  INFO [f702b736] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/dotcom-v3/repo
+  INFO [05ad49ae] Running /usr/bin/env git remote set-url origin git@github.com:flatiron-labs/dotcom-v3.git as deployer@127.0.0.1
+  INFO [05ad49ae] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [cafde49a] Running /usr/bin/env git fetch --depth 1 origin master as deployer@127.0.0.1
+  INFO [cafde49a] Finished in 3.493 seconds with exit status 0 (successful).
+  INFO [9d6487b6] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/releases/20170608192112 as deployer@127.0.0.1
+  INFO [9d6487b6] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [77228474] Running /usr/bin/env git archive master build | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/dotcom-v3/releases/20170608192112 as deployer@127.0.0.1
+  INFO [77228474] Finished in 0.611 seconds with exit status 0 (successful).
+  INFO [3bbd5e8a] Running /usr/bin/env echo "a9bee56d9d9143fd4ac989a240f70a0738382eb6" >> REVISION as deployer@127.0.0.1
+  INFO [3bbd5e8a] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [c7c70871] Running /usr/bin/env ln -s /var/www/dotcom-v3/releases/20170608192112 /var/www/dotcom-v3/releases/current as deployer@127.0.0.1
+  INFO [c7c70871] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [8b977de8] Running /usr/bin/env mv /var/www/dotcom-v3/releases/current /var/www/dotcom-v3 as deployer@127.0.0.1
+  INFO [8b977de8] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [f9d14d2c] Running /usr/bin/env echo "Branch master (at a9bee56d9d9143fd4ac989a240f70a0738382eb6) deployed as release 20170608192112 by luchi" >> /var/www/dotcom-v3/revisions.log as deployer@127.0.0.1
+  INFO [f9d14d2c] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-06-08 17:05:37 -0300 cap qa deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [cc414d75] Running /usr/bin/env mkdir -p /tmp as deployer@127.0.0.1
+  INFO [cc414d75] Finished in 2.169 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-dotcom-v3-qa-luchi.sh 100.0%
+  INFO [a8c2fe09] Running /usr/bin/env chmod 700 /tmp/git-ssh-dotcom-v3-qa-luchi.sh as deployer@127.0.0.1
+  INFO [a8c2fe09] Finished in 0.027 seconds with exit status 0 (successful).
+  INFO [49eeeffc] Running /usr/bin/env git ls-remote git@github.com:flatiron-labs/dotcom-v3.git HEAD as deployer@127.0.0.1
+  INFO [49eeeffc] Finished in 2.480 seconds with exit status 0 (successful).
+  INFO [2b3ca09d] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/shared /var/www/dotcom-v3/releases as deployer@127.0.0.1
+  INFO [2b3ca09d] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [e87ba724] Running /usr/bin/env git clone --mirror --depth 1 --no-single-branch git@github.com:flatiron-labs/dotcom-v3.git /var/www/dotcom-v3/repo as deployer@127.0.0.1
+  INFO [e87ba724] Finished in 92.167 seconds with exit status 0 (successful).
+  INFO [758f6725] Running /usr/bin/env git remote set-url origin git@github.com:flatiron-labs/dotcom-v3.git as deployer@127.0.0.1
+  INFO [758f6725] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [f68cfeac] Running /usr/bin/env git fetch --depth 1 origin master as deployer@127.0.0.1
+  INFO [f68cfeac] Finished in 2.838 seconds with exit status 0 (successful).
+  INFO [40436025] Running /usr/bin/env mkdir -p /var/www/dotcom-v3/releases/20170608200542 as deployer@127.0.0.1
+  INFO [40436025] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [a7e4d2bf] Running /usr/bin/env git archive master build | /usr/bin/env tar -x --strip-components 1 -f - -C /var/www/dotcom-v3/releases/20170608200542 as deployer@127.0.0.1
+  INFO [a7e4d2bf] Finished in 0.623 seconds with exit status 0 (successful).
+  INFO [0e8fef9a] Running /usr/bin/env echo "a9bee56d9d9143fd4ac989a240f70a0738382eb6" >> REVISION as deployer@127.0.0.1
+  INFO [0e8fef9a] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [582b6e1c] Running /usr/bin/env ln -s /var/www/dotcom-v3/releases/20170608200542 /var/www/dotcom-v3/releases/current as deployer@127.0.0.1
+  INFO [582b6e1c] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [45283b74] Running /usr/bin/env mv /var/www/dotcom-v3/releases/current /var/www/dotcom-v3 as deployer@127.0.0.1
+  INFO [45283b74] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [f9afca5e] Running /usr/bin/env echo "Branch master (at a9bee56d9d9143fd4ac989a240f70a0738382eb6) deployed as release 20170608200542 by luchi" >> /var/www/dotcom-v3/revisions.log as deployer@127.0.0.1
+  INFO [f9afca5e] Finished in 0.024 seconds with exit status 0 (successful).

@@ -1,0 +1,70 @@
+DEPENDENCIES
+  build-cookbook
+    path: .
+    metadata: true
+  fis-base
+    git: git@github.com:flatiron-labs/fis-base-cookbook.git
+    revision: ad07ae5b34c6f331a2e7915a27b0124126714f1f
+  fis-vagrant
+    path: ../../../chef-repo/cookbooks/fis-vagrant
+  papertrail-rsyslog
+    git: https://github.com/flatiron-labs/papertrail-rsyslog.git
+    revision: 48b5f492589340e611a64ef7ec1b9ce347244e97
+  varnish (~> 3.1.0)
+
+GRAPH
+  apt (6.1.0)
+  build-cookbook (0.1.0)
+  build-essential (8.0.3)
+    mingw (>= 1.1)
+    seven_zip (>= 0.0.0)
+  chef-sugar (3.4.0)
+  compat_resource (12.19.0)
+  fail2ban (4.0.1)
+    yum-epel (>= 0.0.0)
+  fis-base (0.1.9)
+    apt (>= 0.0.0)
+    fail2ban (>= 0.0.0)
+    nfs (>= 2.2.2)
+    ntp (>= 0.0.0)
+    openssh (>= 0.0.0)
+    papertrail-rsyslog (= 1.2.1)
+    remote_syslog2 (>= 0.0.0)
+    resolvconf (>= 0.0.0)
+    sudo (>= 0.0.0)
+    users (= 2.0.2)
+  fis-vagrant (0.1.0)
+    users (= 2.0.2)
+  iptables (4.2.0)
+  line (0.6.3)
+  mingw (2.0.1)
+    seven_zip (>= 0.0.0)
+  nfs (2.3.1)
+    line (>= 0.0.0)
+    sysctl (>= 0.0.0)
+  ntp (3.4.0)
+  ohai (5.1.0)
+  openssh (2.4.1)
+    iptables (>= 1.0)
+  papertrail-rsyslog (1.2.1)
+    rsyslog (~> 6.0.1)
+  remote_syslog2 (0.3.0)
+  resolvconf (0.4.0)
+  rsyslog (6.0.1)
+  seven_zip (2.0.2)
+    windows (>= 1.2.2)
+  sudo (3.5.0)
+  sysctl (0.9.0)
+    ohai (>= 4.0)
+  users (2.0.2)
+  varnish (3.1.0)
+    apt (>= 2.4)
+    build-essential (>= 0.0.0)
+    chef-sugar (>= 0.0.0)
+    yum (>= 3.0)
+    yum-epel (>= 0.0.0)
+  windows (3.1.0)
+    ohai (>= 4.0.0)
+  yum (5.0.1)
+  yum-epel (2.1.1)
+    compat_resource (>= 12.16.3)
